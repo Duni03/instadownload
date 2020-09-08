@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Insta Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="{% static 'insta.css' %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body style="background-color: #ffdb808f;" >
+
+            <div>
+                <h3 style="font-family: 'Satisfy', cursive;font-size: 39px;text-align: center;">Insta Pic Downloader</h3>.
+                <form class="" action="" method="post" style="text-align: center;">
+                    {% csrf_token %}
+                    {{ form }}<br>
+                    <input class="" type="submit" value="Initialise" style="text-align: center;background-color: DodgerBlue;
+                    border: none;
+                    color: white;
+                    padding: 12px 30px;
+                    cursor: pointer;
+                    font-size: 20px;">
+                </form>
+            </div>
+</body>
+</html>
