@@ -34,9 +34,9 @@ def one(request):
 
 def index(request):
     if request.method == "POST":
-        return HttpResponse('hello')
         p = settings.MEDIA_ROOT
         x=os.path.join(p,"instadownload.jpg")
+        return HttpResponse(x)
         if os.path.exists(x):
             os.remove(x)
         form = newpic(request.POST)
