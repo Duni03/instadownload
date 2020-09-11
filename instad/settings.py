@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '8*j%wd!@8@+w!(^e&ng30$63ufpebrih))9412hm)8olcbf&^d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['instadown.herokuapp.com']
 
 
 # Application definition
