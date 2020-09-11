@@ -34,6 +34,7 @@ def one(request):
 
 def index(request):
     if request.method == "POST":
+        return HttpResponse('hello')
         p = settings.MEDIA_ROOT
         x=os.path.join(p,"instadownload.jpg")
         if os.path.exists(x):
