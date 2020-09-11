@@ -54,9 +54,13 @@ def index(request):
             path = settings.MEDIA_ROOT
             img_list = os.listdir(path)
             context = {"images":img_list}
-            return render(request,"index1.html",context)
+            return redirect('/down')
     return render(request,"index.html",{"form": newpic()})
-
+def two(request):
+    path = settings.MEDIA_ROOT
+    img_list = os.listdir(path)
+    context = {"images":img_list}
+    return render(request,"index1.html",context)
 
 
 
