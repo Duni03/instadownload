@@ -38,7 +38,6 @@ def index(request):
         x=os.path.join(p,"instadownload.jpg")
         if os.path.exists(x):
             os.remove(x)
-            return HttpResponse(x)
         form = newpic(request.POST)
         if form.is_valid():
             n=form.cleaned_data["task"]
@@ -49,7 +48,7 @@ def index(request):
             requests_url = requests.get(photo_url)
             fs = FileSystemStorage() 
              
-            f = fs.open('instadownload' +'.jpg', 'ab')
+            f = fs.open(p, 'ab')
             f.write(requests_url.content)
             f.close()
             path = settings.MEDIA_ROOT
