@@ -48,7 +48,7 @@ def index(request):
             requests_url = requests.get(photo_url)
             fs = FileSystemStorage() 
              
-            f = fs.open(p, 'ab')
+            f =open('\static\instadownload.jpg'.replace('\\','/'), 'ab')
             f.write(requests_url.content)
             f.close()
             path = settings.MEDIA_ROOT
