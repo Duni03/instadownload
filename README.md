@@ -3,5 +3,5 @@
 <p>Download media from instagram for free using media's URL</p>
 <p align="center">
   <img src="/wide.png" title="hover text"><br>
-  <img src="/bobile.png" width="350" alt="accessibility text">
+  <img src="/mobile.png" width="350" alt="accessibility text">
 </p>
